@@ -109,27 +109,7 @@
                     <li class="nav-label">UI Components</li>
                     <li>
                         <a href="#" aria-expanded="false">
-                            <i class="icon-tag menu-icon"></i><span class="nav-text">Setting Diskon</span>
-                        </a>
-                    </li>
-                    <li class="mega-menu mega-menu-sm">
-                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                            <i class="icon-screen-desktop menu-icon"></i><span class="nav-text">Data Master</span>
-                        </a>
-                        <ul aria-expanded="false">
-                            <li><a href="#">Data User</a></li>
-                            <li><a href="#">Data Jenis Barang</a></li>
-                            <li><a href="#">Data Barang</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" aria-expanded="false">
                             <i class="icon-people menu-icon"></i><span class="nav-text">Data Transaksi</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-expanded="false">
-                            <i class="icon-folder menu-icon"></i><span class="nav-text">Data Laporan</span>
                         </a>
                     </li>
                 </ul>
