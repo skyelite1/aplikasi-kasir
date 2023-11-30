@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Aplikasi Kasir</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon.png">
     <!-- Custom Stylesheet -->
     <link href="/assets/plugins/tables/css/datatable/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link href="/assets/css/style.css" rel="stylesheet">
@@ -45,7 +45,7 @@
                     <b class="logo-abbr"><img src="/assets/images/logo.png" alt=""> </b>
                     <span class="logo-compact"><img src="/assets/images/logo-compact.png" alt=""></span>
                     <span class="brand-title">
-                        <img src="/assets/images/logo-text.png" alt="">
+                        <h1 class="text-white">A.B Kasir</h1>
                     </span>
                 </a>
             </div>
@@ -81,7 +81,7 @@
                                             <a href="#"><i class="icon-user"></i> <span>Profile</span></a>
                                         </li>
                                         <hr class="my-2">
-                                        <li><a href="#"><i class="icon-logout"></i> <span>Logout</span></a></li>
+                                        <li><a href="/logout"><i class="icon-logout"></i> <span>Logout</span></a></li>
                                     </ul>
                                 </div>
                             </div>

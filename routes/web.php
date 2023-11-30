@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\JenisBarangController;
+use App\Http\Controllers\BarangController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +21,7 @@ use App\Http\Controllers\UserController;
 //     return view('welcome');
 // });
 Route::middleware(['guest'])->group(function () {
-    Route::get('/', [HomeController::class, 'index']);
+    Route::get('/', [HomeController::class, 'index'])->name('login');
     Route::post('/', [HomeController::class, 'login']);
 });
 
@@ -29,11 +31,26 @@ Route::get('/home', function () {
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/admin', [HomeController::class, 'admin']);
+    Route::get('/kasir', [HomeController::class, 'kasir']);
+    Route::get('/logout', [HomeController::class, 'logout']);
+
+    // CRUD Data User
     Route::get('/admin/user', [UserController::class, 'index']);
     Route::post('/admin/user/store', [UserController::class, 'store']);
     Route::post('/admin/user/update/{id}', [UserController::class, 'update']);
     Route::post('/admin/user/destroy/{id}', [UserController::class, 'destroy']);
-    Route::get('/kasir', [HomeController::class, 'kasir']);
-    Route::get('/logout', [HomeController::class, 'logout']);
+
+    // CRUD Data Jenis Barang
+    Route::get('/admin/jenisbarang', [JenisBarangController::class, 'index']);
+    Route::post('/admin/jenisbarang/store', [JenisBarangController::class, 'store']);
+    Route::post('/admin/jenisbarang/update/{id}', [JenisBarangController::class, 'update']);
+    Route::post('/admin/jenisbarang/destroy/{id}', [JenisBarangController::class, 'destroy']);
+
+    // CRUD Data Barang
+    Route::get('/admin/barang', [BarangController::class, 'index']);
+    Route::post('/admin/barang/store', [BarangController::class, 'store']);
+    Route::post('/admin/barang/update/{id}', [BarangController::class, 'update']);
+    Route::post('/admin/barang/destroy/{id}', [BarangController::class, 'destroy']);
+
 });
 

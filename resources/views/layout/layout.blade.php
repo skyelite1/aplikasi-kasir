@@ -45,7 +45,7 @@
                     <b class="logo-abbr"><img src="/assets/images/logo.png" alt=""> </b>
                     <span class="logo-compact"><img src="/assets/images/logo-compact.png" alt=""></span>
                     <span class="brand-title">
-                        <H1 class="text-white">ABE Kasir</H1>
+                        <H1 class="text-white">A.B Kasir</H1>
                     </span>
                 </a>
             </div>
@@ -117,13 +117,13 @@
                             <i class="icon-screen-desktop menu-icon"></i><span class="nav-text">Data Master</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="admin/user">Data User</a></li>
-                            <li><a href="admin/jenis-barang">Data Jenis Barang</a></li>
-                            <li><a href="admin/data-barang">Data Barang</a></li>
+                            <li><a href="/admin/user">Data User</a></li>
+                            <li><a href="/admin/jenisbarang">Data Jenis Barang</a></li>
+                            <li><a href="/admin/barang">Data Barang</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="admin/laporan" aria-expanded="false">
+                        <a href="/admin/laporan" aria-expanded="false">
                             <i class="icon-folder menu-icon"></i><span class="nav-text">Data Laporan</span>
                         </a>
                     </li>
