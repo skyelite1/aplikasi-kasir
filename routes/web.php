@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\JenisBarangController;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\DiskonController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,6 +52,14 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/admin/barang/store', [BarangController::class, 'store']);
     Route::post('/admin/barang/update/{id}', [BarangController::class, 'update']);
     Route::post('/admin/barang/destroy/{id}', [BarangController::class, 'destroy']);
+
+    // Setting Diskon
+    Route::get('/admin/setdiskon', [DiskonController::class, 'index']);
+    Route::post('/admin/setdiskon/update/{id}', [DiskonController::class, 'update']);
+
+    // Setting Diskon
+    Route::get('/admin/profile', [UserController::class, 'profile']);
+    Route::post('/admin/profile/update/{id}', [UserController::class, 'updateprofile']);
 
 });
 

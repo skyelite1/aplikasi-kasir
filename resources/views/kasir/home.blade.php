@@ -78,7 +78,7 @@
                                 <div class="dropdown-content-body">
                                     <ul>
                                         <li>
-                                            <a href="#"><i class="icon-user"></i> <span>Profile</span></a>
+                                            <a href="admin/profile"><i class="icon-user"></i> <span>Profile</span></a>
                                         </li>
                                         <hr class="my-2">
                                         <li><a href="/logout"><i class="icon-logout"></i> <span>Logout</span></a></li>
@@ -181,7 +181,7 @@
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright &copy; Designed & Developed by <a href="#">Quixlab</a> 2018</p>
+                <p>Copyright &copy; Designed & Developed by <a href="#">Abdulloh</a> 2023</p>
             </div>
         </div>
         <!--**********************************
